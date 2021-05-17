@@ -21,7 +21,7 @@ WHERE
     C_CUSTKEY = O_CUSTKEY
     AND L_ORDERKEY = O_ORDERKEY
     AND O_ORDERDATE >= '[DATE]'
-    AND o_orderdate < '[DATE]+’ '3 months'::INTERVAL
+    AND o_orderdate < '[DATE]'+ '3 months'::INTERVAL
     AND L_RETURNFLAG = 'R'
     AND C_NATIONKEY = N_NATIONKEY
 GROUP BY
